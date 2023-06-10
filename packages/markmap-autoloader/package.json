@@ -42,7 +42,7 @@
   },
   "devDependencies": {
     "markmap-common": "^0.14.2",
-    "markmap-lib": "^0.14.4",
+    "markmap-lib": "file:./../markmap-lib",
     "markmap-view": "^0.14.4"
   }
 }
