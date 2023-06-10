@@ -1,25 +1,80 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Markmap</title>
-<style>
-* {
-  margin: 0;
-  padding: 0;
-}
-#mindmap {
-  display: block;
-  width: 100vw;
-  height: 100vh;
-}
-</style>
-<!--CSS-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Machine Learning Courses @ MIT</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    #mindmap {
+      display: block;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    footer {
+      display: flex;
+      justify-content: center;
+      /* justify-content: right; */
+    }
+
+    footer .o {
+      display: flex;
+      /* width: 50vw; */
+      /* gap: 1em; */
+      justify-content: center;
+    }
+
+    */ footer .credit {
+      margin: 30px 30px 20px 20px;
+      padding: 30px 30px 20px 20px;
+    }
+  </style>
+  <link rel="stylesheet" href="src/style.css" />
+  <link rel="stylesheet" href="src/bootstrap.css" />
+  <!--CSS-->
 </head>
+
 <body>
-<svg id="mindmap"></svg>
-<!--JS-->
+  <svg id="mindmap"></svg>
+
+
+
+  <footer>
+    <div class="i"></div>
+    <div class="o">
+      <div class="madeby">
+        Built with ❤️ by &nbsp;<a href="https://shenshen.mit.edu">Shen²</a>&nbsp;&nbsp;
+      </div class="credit">
+      [
+      <a id="credit" href="">Credit</a>&nbsp;&nbsp;
+      <a href="https://shenshen.mit.edu/git/shensquared/mltree">Bug report</a>
+      ]
+    </div>
+  </footer>
+
+  <script src="src/popper.js"></script>
+  <script src="src/tippy.js"></script>
+  <script>
+    tippy("#credit", {
+      content:
+        "An awesome 6.390[6.036] TA (before my time) wrote the original list. I haven't been able to track down who they are; plz drop me a note if you have any clue on this. Thanks!",
+    });
+    tippy("#390", {
+      content:
+        "An awesome 6.390[6.036] TA (before my time) wrote the original list. I haven't been able to track down who they are; plz drop me a note if you have any clue on this. Thanks!",
+    });
+  </script>
+
+  <!--JS-->
+
+
 </body>
+
 </html>
