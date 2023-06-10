@@ -10,10 +10,7 @@ import { IAssets } from './types';
 
 const template: string = process.env.TEMPLATE;
 
-const BASE_JS: JSItem[] = [
-  `https://cdn.jsdelivr.net/npm/d3@${process.env.D3_VERSION}`,
-  `https://cdn.jsdelivr.net/npm/markmap-view@${process.env.VIEW_VERSION}`,
-].map((src) => ({
+const BASE_JS: JSItem[] = [`src/d3.js`, `src/markmap-view.js`].map((src) => ({
   type: 'script',
   data: {
     src,
